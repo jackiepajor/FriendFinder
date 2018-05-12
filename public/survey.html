@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+    <title>FriendFinder Survey</title>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='card-panel cyan lighten-1 col s12 center-align '>
+            <h3>
+                <strong>Survey Questions</strong>
+            </h3>
+
+            <div class='containeer'>
+                <div class='card-panel white col s12 center-align'>
+                    <h5>
+                        <strong>About You</strong>
+                    </h5>
+                    <br>
+
+                    <!-- Name -->
+                    <div class="left-align input-field col s6">
+                        <i class="left-align material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate" required>
+                        <label for="icon_prefix">Name (required)</label>
+                    </div>
+
+                    <!-- Photo -->
+                    <div class="left-align input-field col s6">
+                        <i class="left-align material-icons prefix">add_a_photo</i>
+                        <input id="icon_prefix" type="text" class="validate" required>
+                        <label for="icon_prefix">Photo (required)</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class='container'>
+                <div class='card-panel white col s12 left-align'>
+                    <!--____________________________________________________________________-->
+                    <!-- Survey Questions -->
+                    <h5>
+                        <strong>Question 1</strong>
+                    </h5>
+                    <p>You have plans Friday night, but your best friend calls you and is having a crisis - So you, without
+                        question, cancel your plans so you can be there for them.</p>
+                    <select data-placeholder="question1" class="browser-default" id="question1">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 2</strong>
+                    </h5>
+                    <p>You value open communication and prefer to address conflict upfront.</p>
+                    <select data-placeholder="question2" class="browser-default" id="question2">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 3</strong>
+                    </h5>
+                    <p>You would rather stay in and cook dinner as opposed to dressing up and going out to a fancy restaurant.</p>
+                    <select data-placeholder="question3" class="browser-default" id="question3">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 4</strong>
+                    </h5>
+                    <p>You love to travel and want to explore the world.</p>
+                    <select data-placeholder="question4" class="browser-default" id="question4">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 5</strong>
+                    </h5>
+                    <p>You are dependable and can always be counted on.</p>
+                    <select data-placeholder="question5" class="browser-default" id="question5">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 6</strong>
+                    </h5>
+                    <p>Your ideal vacation would be a tropical destination.</p>
+                    <select data-placeholder="question6" class="browser-default" id="question6">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 7</strong>
+                    </h5>
+                    <p>You would rather stay in with a bottle of wine and a movie than go out to a club/bar.</p>
+                    <select data-placeholder="question7" class="browser-default" id="question7">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 8</strong>
+                    </h5>
+                    <p>You thrive in large groups.</p>
+                    <select data-placeholder="question8" class="browser-default" id="question8">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 9</strong>
+                    </h5>
+                    <p>You will always give your honest opinion, even if it means hurting someones feelings.</p>
+                    <select data-placeholder="question9" class="browser-default" id="question9">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+
+                    <h5>
+                        <strong>Question 10</strong>
+                    </h5>
+                    <p>You are always supportive even if you dont agree.</p>
+                    <select data-placeholder="question10" class="browser-default" id="question10">
+                        <option value="">Select an option</option>
+                        <option value="1">1 - Strongly Disagree</option>
+                        <option value="2">2 - Disagree</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Agree</option>
+                        <option value="5">5 - Strongly Agree</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <!-- End Survey Questions -->
+                    <!--____________________________________________________________________-->
+                </div>
+            </div>
+
+            <!-- Submit Survey Button -->
+            <div class='col s4 center-align'>
+                <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger orange lighten-1" id="submitBtn">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div class='col s4 center-align'>
+        <p>
+            <a href='/api/friends'>API Friends List</a>
+            ||
+            <a href='https://github.com/jackiepajor/FriendFinder' target='_blank'>GitHub Repo</a>
+        </p>
+    </div>
+
+
+    <!--____________________________________________________________________-->
+    <!-- Friend Match Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Meet Your New Best Friend!</h4>
+            <h5 id="friendMatchName"></h5>
+            <img id="friendMatchPhoto" src="" alt="Image Unavailable" width=2 50px>
+        </div>
+        <div class="modal-footer">
+            <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+        </div>
+    </div>
+    </div>
+
+    <!-- Capture all user input data and send to server -->
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#submitBtn").on("click", function () {
+
+                // validate survey inputs
+                function validateSurvey() {
+
+                    var isValid = true;
+                    $('.validate').each(function () {
+                        if ($(this).val() === '') {
+                            isValid = false;
+                        }
+                    });
+
+                    $('.browser-default').each(function () {
+                        if ($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
+
+                    return isValid;
+                }
+
+                // if the survey is fully completed (name, photo, 10 questions)
+                if (validateSurvey() == true) {
+
+                    // Create a new friend
+                    var newFriend = {
+                        name: $('#name').val().trim(),
+                        photo: $('#photo').val().trim(),
+                        scores: [
+                            $('#question1').val(),
+                            $('#question2').val(),
+                            $('#question3').val(),
+                            $('#question4').val(),
+                            $('#question5').val(),
+                            $('#question6').val(),
+                            $('#question7').val(),
+                            $('#question8').val(),
+                            $('#question9').val(),
+                            $('#question10').val(),
+                        ]
+                    };
+
+                    var currentURL = window.location.origin;
+
+                    // post new friend data to friends API via AJAX
+                    $.post(currentURL + "/api/friends", newFriend, function (data) {
+
+                        // best friend match name and photo display
+                        $("#friendMatchName").text(data.name);
+                        $("#friendMatchPhoto").attr("src", data.photo);
+                    });
+
+                    // Display best friend match modal
+                    $('.modal').modal();
+
+                    // Clear survey form upon user submission
+                    $('#name').val("");
+                    $('#photo').val("");
+                    $('#question1').val("");
+                    $('#question2').val("");
+                    $('#question3').val("");
+                    $('#question4').val("");
+                    $('#question5').val("");
+                    $('#question6').val("");
+                    $('#question7').val("");
+                    $('#question8').val("");
+                    $('#question9').val("");
+                    $('#question10').val("");
+                } else {
+                    alert("Please select an option for all 10 questions before clicking submit.")
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
